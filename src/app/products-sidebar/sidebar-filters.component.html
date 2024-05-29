@@ -1,0 +1,74 @@
+<div class="relative py-3 pl-8 bg-white rounded-md min-w-[15vw] min-h-[80vh]">
+  <ul class="flex flex-col text-[15px] text-gray-600">
+    <li class="py-2 flex items-center cursor-pointer">Dashboard</li>
+
+    <li
+      class="bg-blue-300 bg-opacity-10 cursor-pointer py-2 rounded-sm flex justify-between items-center border-r-4 border-blue-500"
+    >
+      Reports
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          class="main-grid-item-icon"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          class="text-black-300 mr-3"
+          (click)="showDropdownLinks = !showDropdownLinks"
+        >
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+      </div>
+    </li>
+    <ul
+      class="px-6 py-2 flex flex-col text-[15px] text-gray-600 cursor-pointer"
+      *ngIf="showDropdownLinks"
+    >
+      <li class="text-blue-400 py-2 whitespace-nowrap">Inventory Management</li>
+      <li>
+        <button>Product Insights</button>
+      </li>
+    </ul>
+
+    <li class="py-2 flex items-center">
+      <button>Messages</button>
+    </li>
+
+    <li class="py-2 flex items-center">
+      <button>Order</button>
+    </li>
+    <li class="py-2 flex items-center">
+      <button>Calendar</button>
+    </li>
+
+    <div class="h-[1px] bg-gray-600 m-3 opacity-10"></div>
+
+    <li class="py-2 flex items-center">
+      <button>Chat</button>
+    </li>
+    <li class="py-2 flex items-center">
+      <button>Settings</button>
+    </li>
+    <li class="py-2 flex items-center">
+      <button>Logout</button>
+    </li>
+  </ul>
+  <div
+    class="flex flex-row lg:pl-8 pl-2 gap-2 pb-5 items-center text-gray-500 absolute inset-x-0 bottom-0 h-16"
+  >
+    <img
+      src="https://placebear.com/640/360"
+      alt="product-avatar "
+      class="h-[30px] w-[30px] inline-block rounded-full cursor-pointer"
+    />
+    <div>
+      <h1 class="text-black whitespace-nowrap">Musharof</h1>
+      <h1 class="text-xs whitespace-nowrap">hellogmail.com</h1>
+    </div>
+  </div>
+</div>
